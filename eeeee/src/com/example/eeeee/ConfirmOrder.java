@@ -31,7 +31,7 @@ public class ConfirmOrder extends Activity {
 		//confirmOrderButton.setOnClickListener(this); 
 		final SQLiteDatabase db;
 		db=openOrCreateDatabase("UsersDB", Context.MODE_PRIVATE, null);
-		db.execSQL("CREATE TABLE IF NOT EXISTS foodorder(foodname VARCHAR,price VARCHAR,quantity VARCHAR,orderid VARCHAR,username VARCHAR);");
+		db.execSQL("CREATE TABLE IF NOT EXISTS users(UserName VARCHAR,name VARCHAR,age VARCHAR,password VARCHAR,usertype VARCHAR);");
 
 		Integer sum=0;
 
