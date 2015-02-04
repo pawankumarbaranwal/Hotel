@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006600"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/menuID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <ListView
+        android:id="@+id/food_lists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+    <Button
+        android:id="@+id/other_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/other_order" />
+
+</LinearLayout>

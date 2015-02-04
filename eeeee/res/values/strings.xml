@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hotel</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="signIn">Sign In</string>
+    <string name="signUp">Sign Up</string>
+    <string name="welcomeMessage">Welcome to ABC Hotels</string>
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
+    <string name="attempts">Attempts</string>
+    <string name="loginCredintials">Please Enter Login Credintials</string>
+    <string name="userInput">Please enter the credentials</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+    <string name="age">Age</string>
+    <string name="placeAnOrder">Place an Order</string>
+    <string name="viewPreviousOrders">View Previous Orders</string>
+    <string name="changePassword">Change Password</string>
+    <string name="oldPassword">Old Password</string>    
+    <string name="newPassword">New Password</string>    
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="chapati">Chapati Items</string>
+    <string name="starters">Starters</string>
+    <string name="confirmOrder">Confirm Order</string>
+    <string name="confirmOrderButton">Confirm Order</string>
+    <string name="modifyOrderButton">Modify Order</string>
+    <string name="rejectOrderButton">Reject Order</string>    
+    <string name="non_veg">Non Veg Curries</string>
+    <string name="other_order">Other Order</string>
+    <string name="previousHome">Home</string>
+    <string name="previousOrderHeaderName">Name</string>    
+    <string name="previousOrderHeaderPrice">Price</string>
+    <string name="previousOrderHeaderQuantity">Quantity</string>
+    <string name="previousOrderHeaderRowPrice">Total</string>
+    <string name="addAdmin">Add Admin</string>
+    <string name="addMenu">Add Menu</string>
+    <string name="foodType">Food Type</string>
+    <string name="foodName">Name</string>
+    <string name="foodPrice">Price</string>
+    <string name="submitFood">Submit</string>
+
+</resources>

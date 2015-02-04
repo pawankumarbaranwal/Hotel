@@ -1,0 +1,40 @@
+package com.example.eeeee;
+
+import android.app.Activity;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class AddMenu extends Activity{
+	Button submitFood;
+	EditText foodType,foodName,foodPrice;
+	SQLiteDatabase db;
+	private Context context;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.addmenu);
+		foodType=(EditText)findViewById(R.id.foodType);
+		foodName=(EditText)findViewById(R.id.foodName);
+		foodPrice=(EditText)findViewById(R.id.foodPrice);
+		submitFood=(Button)findViewById(R.id.submitFood);
+		db=openOrCreateDatabase("UsersDB", Context.MODE_PRIVATE, null);
+		db.execSQL("CREATE TABLE IF NOT EXISTS foodtype(foodType VARCHAR);");
+		db.execSQL("CREATE TABLE IF NOT EXISTS fooddetails1(foodname VARCHAR,price VARCHAR,foodtype VARCHAR);");
+		submitFood.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {	
+				db.execSQL("INSERT INTO foodtype VALUES('"+foodType.getText()+"');");
+				db.execSQL("INSERT INTO fooddetails1 VALUES('"+foodName.getText()+"','"+foodPrice.getText()+"','"+foodType.getText()+"');");
+				Toast.makeText(context, "Food Details has been added successfully", Toast.LENGTH_SHORT).show();
+			}
+		});
+		
+	}
+}

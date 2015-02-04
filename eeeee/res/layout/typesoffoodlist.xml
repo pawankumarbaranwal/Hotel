@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+        android:background="#006600">
+
+    <Button
+        android:id="@+id/chapati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/chapati" />
+
+    <Button
+        android:id="@+id/starters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chapati"
+        android:text="@string/starters" />
+
+    <Button
+        android:id="@+id/non_veg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/starters"
+        android:text="@string/non_veg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom|center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/confirmOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmOrder" />
+
+        <Button
+            android:id="@+id/typeOfFoodListHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previousHome" />
+    </LinearLayout>
+
+</RelativeLayout>
