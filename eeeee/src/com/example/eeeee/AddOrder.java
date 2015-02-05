@@ -34,6 +34,7 @@ public class AddOrder extends Activity{
 		CustomAdapter customAdapter = new CustomAdapter(this);
 		listView.setAdapter(customAdapter);
 		other_order.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(context, TypesOfFoodList.class);
 				startActivity(intent);

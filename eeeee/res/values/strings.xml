@@ -42,5 +42,10 @@
     <string name="foodName">Name</string>
     <string name="foodPrice">Price</string>
     <string name="submitFood">Submit</string>
-
+    <string name="addAdminUserName">User Name</string>
+    <string name="addAdminName">Name</string>
+    <string name="addAdminAge">Age</string>
+    <string name="addAdminPassword">Password</string>
+    <string name="addAdminHome">Home</string>
+    
 </resources>

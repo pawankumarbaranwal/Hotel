@@ -11,12 +11,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.navdrawer.SimpleSideDrawer;
-
 public class TypesOfFoodList  extends Activity{
 
 	public static String order="";
-	SimpleSideDrawer slide_me;
 	Button chapati,new_btn,starters,nonVegCurries,confirmOrder,typeOfFoodListHome;
 	TextView tv1;
 	final Context context=this;

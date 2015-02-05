@@ -43,6 +43,7 @@ public class ConfirmOrder extends Activity {
 		CustomAdapterForConfirmOrder customAdapterForConfirmOrder = new CustomAdapterForConfirmOrder(this);
 		confirmOrderListview.setAdapter(customAdapterForConfirmOrder);
 		confirmOrderButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				Login.userId="pawan";
 				Cursor c=db.rawQuery("SELECT * FROM foodorder WHERE username='"+Login.userId+"'", null);
@@ -65,12 +66,14 @@ public class ConfirmOrder extends Activity {
 			}
 		});
 		modifyOrderButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(context, TypesOfFoodList.class);
 				startActivity(intent);
 			}
 		});
 		rejectOrderButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				CustomAdapter.orderMenuList.clear();
 				Intent intent = new Intent(context, UserHome.class);
